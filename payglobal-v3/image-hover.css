@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.photo-grid {margin:auto;text-align: center; padding:0px; margin:0px;}
+.photo-grid ul {list-style:none; margin:0px; padding:0px;}
+.photo-grid li { margin:0px; width:32%; float:left; list-style:none; padding:0px;}
+.photo-grid img {display: block; height: auto;}
+.photo-grid figure {height: 250px; overflow: hidden; position: relative; width:94%;}
+.photo-grid figcaption {background: rgba(255,11,11,0.8);color: #ffffff; width:100%; display: table; height: 100%; left: 0; opacity: 0; position: absolute;
+right: 0; top: 0; z-index: 100;}
+.photo-grid figcaption p {display: table-cell; font-size: 1.5em; position: relative; top: -40px; color:#ffffff; width: 100%; vertical-align: middle;}
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+}
+
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 100%;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+.photo-grid figcaption {
+	background: rgba(255,11,11,0.8);
+	color: #ffffff;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}

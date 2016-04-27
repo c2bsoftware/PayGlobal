@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width : 1200px),
+only screen and (max-device-width : 1200px){
+body{margin:0px 10px;}
+.payGlobalDiv{width:98%;}
+h1, h2, h3, h4 { font-size:24px;}
+}
+
+@media only screen and (max-width : 1000px),
+only screen and (max-device-width : 1000px){
+body{margin:0px 5px;}
+.headerDiv{ padding:10px; overflow:hidden;}
+.rightDiv{ width:440px;}
+.textBox {width:173px;}
+.bannerContDiv{padding:80px 0px;}
+.captionBanner{ font-size:30px;}
+.photo-grid li { width:100%; float:none;}
+.photo-grid figure {height: 250px; overflow: hidden; position: relative; width:100%; margin:0px;}
+.footer-col-1{width:50%;}
+.testInnMn, .contentdiv{width:96%;}
+.bank-row,.partner-row, .aboutdiv{width:98%;}
+.bannerDiv{ height:100%;}
+.bank-row{width:100%; margin:0px auto 0px auto; }
+.partner-row{width:100%; margin:0px auto 0px auto; }
+h1,h2{ line-height:40px !important;}
+}
+@media only screen and (max-width : 800px),
+only screen and (max-device-width : 800px){
+.captionblkBg, .captionWhiteBg{display:none;}
+nav{padding:150px 0px 0px;}
+.col-3, .col-2{width:98%; float:none;}
+.padding{padding:10px 0px; overflow:hidden;}
+.onlinepay-padding-left, .onlinepay-padding-right{padding:0px;}
+}
+@media only screen and (max-width : 768px),
+only screen and (max-device-width : 768px){
+.hidediv{ display:none;}
+.footerMnDiv{padding:20px 0px 0px 0px;}
+.footer-col-1{width:100%; float:none; padding-bottom:20px;}
+.footerMenuList{margin-right:0px;}
+#business{width:200px !important;}
+.col-4{width:100%;}
+.imge-content{position:relative; width:100%; background:#ff0b0b; right:0px;}
+.feature-panel{padding:10px 0px; margin:0px 0px 0px 0px; }
+
+
+.portable-content{position: relative; left:0px; top: 0px; padding: 20px 15px; width:91%; background:#ff0b0b; text-align:center}
+.portable-content h2{font-size:20px; line-height:30px; margin:0px;}
+.portable-content h4{font-size:16px; line-height:24px; margin:0px;}
+.portable-content ul li{font-size:16px;}
+.portable-content ul li span{font-size:16px;}
+
+}
+@media only screen and (max-width : 360px),
+only screen and (max-device-width : 360px){
+a.requestBtn{margin:10px 0px; display:block;}
+}
