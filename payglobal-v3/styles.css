@@ -226,9 +226,11 @@ a.bannerBtn div:hover {
 	font-size:12px;
 	line-height:24px;
 }
-.copyrightsDiv a {
+.copyrightsDiv a,
+.copyrightsDiv .urlspan {
 	color:#ff0b0b;
 	text-decoration:none;
+	cursor: pointer;
 }
 .copyrightsDiv span {
 	display:block;
@@ -396,7 +398,7 @@ ul.banner li a:hover {
 	text-align:center;
 	color:#333333;
 	font-size:16px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	background:#ffffff;
 	border-bottom:2px solid #ededed;
 }
@@ -648,6 +650,13 @@ ul.inner-list li i {
 }
 .banner-section {
 	background:url(images/basc-banner-bg.jpg) no-repeat;
+	background-size:cover;
+	background-position:top center;
+	width:100%;
+	height:500px;
+}
+.banner-section-load {
+	background:url(images/payglobal-load.jpg) no-repeat;
 	background-size:cover;
 	background-position:top center;
 	width:100%;
@@ -908,6 +917,7 @@ a.cardbannerBtn div:hover{ background:#000000; color:#ffffff;}
 	position:absolute;
 	left:50px;
 	top:0px;
+	right: 0px;
 	padding:100px 0px;
 }
 .card-content h2 {
@@ -1292,7 +1302,7 @@ margin:10px 0px color:#252525;
 	padding:30px 0px !important;
 }
 .portable-video-bg {
-	background-image:url('images/portable-video-bg.jpg');
+	background-image:url('images/bluetooth-creditcard.jpg');
 	background-repeat:no-repeat;
 	background-size:100%;
 	height:400px;
@@ -1322,3 +1332,106 @@ margin:10px 0px color:#252525;
 /* adding css */
 
 .mid-content{ width:100%; background:#fff;}
+
+
+.pptc, .fullimg{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+    background-color: rgba(0,0,0,.7);
+	align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin: 0 auto;
+    z-index: 10000;
+}
+.fullimg{
+	z-index: 10001;
+	cursor: pointer;
+}
+.pptc .wrapper{
+	min-width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.pptc .wrapper .closepptc{
+	display: block;
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin: 25px 0;
+}
+.pptc .wrapper .closepptc span{
+	width: auto;
+	cursor: pointer;
+	margin-right: 25px;
+	font-size: 16px;
+}
+.pptc .wrapper .closepptc span:hover{
+	color: #fff;
+}
+.pptc .wrapper .limg{
+	display: block;
+	float: left;
+}
+.pptc .wrapper .limg.width20{
+	width:20%;
+}
+.pptc .wrapper .limg.width33{
+	width:33%;
+}
+.pptc .wrapper .limg img{
+	display: block;
+	width: 90%;
+	padding: 0 5%;
+	float: left;
+	cursor: pointer;
+}
+.btnTopRequestCall{
+	background-color: #f1f1f1;
+    float: left;
+    border-radius: 4px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+.btnTopRequestCall:hover{
+	background-color: #ff0b0b;
+	color: #fff;
+}
+.hiddenhint{
+	display: none;
+	position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #000;
+    z-index: 15;
+    padding: 10px;
+    margin-top: -75px;
+	color: #000;
+}
+.hiddenhint.smallhint{
+	font-size: 10px;
+}
+.requestBtnDiv{
+	width:100%;
+	text-align:center;
+	background-color: #fff;
+}
+.requestBtnDiv.left{
+	text-align: left;
+}
+.requestBtnDiv.left.no-bg{
+	background-color: transparent;
+}
+.requestBtnDiv a{
+	position: relative;
+}
+.requestBtnDiv a:hover .hiddenhint{
+	display: block;
+}
